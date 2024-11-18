@@ -42,6 +42,8 @@
         "drupal/admin_toolbar": "^3.1",
         "drupal/advanced_search": "^2.1",
         "drupal/better_exposed_filters": "^6.0",
+        "drupal/bootstrap_barrio": "^5.5",
+        "drupal/bootstrap_sass": "^5.0",
         "drupal/citation_select": "^2.0@beta",
         "drupal/coi": "^4.0",
         "drupal/config_update": "^2.0@alpha",
@@ -65,6 +67,7 @@
         "drupal/search_api_solr": "^4.2",
         "drupal/taxonomy_manager": "^2.0",
         "drupal/term_merge": "^2.0@beta",
+        "drupal/tla_bootstrap_sass": "dev-main",
         "drupal/twig_tweak": "^3.2",
         "drupal/views_data_export": "^1.2",
         "drupal/views_field_view": "^1.0@beta",
@@ -72,10 +75,7 @@
         "islandora-rdm/islandora_fits": "dev-8.x-1.x as 1.x-dev",
         "islandora/views_nested_details": "^1.0",
         "library/pdf.js": "^2.4",
-        "drupal/bootstrap_barrio": "^5.5",
-        "drupal/bootstrap_sass": "^5.0",
-        "thelanguagearchive/flat_deposit": "dev-feature/d10",
-        "thelanguagearchive/tla_bootstrap_sass": "dev-main"
+        "thelanguagearchive/flat_deposit": "dev-feature/d10"
     },
     "conflict": {
         "drupal/drupal": "*",

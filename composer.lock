@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "812bb67ab31b444c74ceba71d01a34d3",
+    "content-hash": "0651ae451b846f8f996050095432bc19",
     "packages": [
         {
             "name": "adci/full-name-parser",
@@ -1736,6 +1736,109 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/better_exposed_filters",
                 "issues": "https://www.drupal.org/project/issues/better_exposed_filters"
+            }
+        },
+        {
+            "name": "drupal/bootstrap_barrio",
+            "version": "5.5.17",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/bootstrap_barrio.git",
+                "reference": "5.5.17"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap_barrio-5.5.17.zip",
+                "reference": "5.5.17",
+                "shasum": "2f24a1caee5cd9041c49c607c2cde0a7d48083ae"
+            },
+            "require": {
+                "drupal/core": "^10.3 || ^11.0",
+                "twbs/bootstrap": "^5.0.0"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "5.5.17",
+                    "datestamp": "1725856215",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alberto Siles",
+                    "homepage": "https://www.drupal.org/user/827704",
+                    "email": "alberto@siles.pe"
+                },
+                {
+                    "name": "ricardo.castaneda",
+                    "homepage": "https://www.drupal.org/user/3520894"
+                },
+                {
+                    "name": "WillAcon",
+                    "homepage": "https://www.drupal.org/user/2824325"
+                }
+            ],
+            "description": "Bootstrap 5 base theme.",
+            "homepage": "https://www.drupal.org/project/bootstrap_barrio",
+            "support": {
+                "source": "https://git.drupalcode.org/project/bootstrap_barrio"
+            }
+        },
+        {
+            "name": "drupal/bootstrap_sass",
+            "version": "5.0.11",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/bootstrap_sass.git",
+                "reference": "5.0.11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap_sass-5.0.11.zip",
+                "reference": "5.0.11",
+                "shasum": "5762b5db6d9a194c0982e99bbde0ed8e90849554"
+            },
+            "require": {
+                "drupal/bootstrap_barrio": ">=5.1.3",
+                "drupal/core": "^9 || ^10 || ^11"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "5.0.11",
+                    "datestamp": "1722796877",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "hatuhay",
+                    "homepage": "https://www.drupal.org/user/827704"
+                },
+                {
+                    "name": "Ricardo.Castaneda",
+                    "homepage": "https://www.drupal.org/user/3520894"
+                }
+            ],
+            "description": "SASS subtheme for Barrio Theme.",
+            "homepage": "http://drupal.org/project/bootstrap_sass",
+            "support": {
+                "source": "https://git.drupalcode.org/project/bootstrap_sass"
             }
         },
         {
@@ -5310,6 +5413,36 @@
             }
         },
         {
+            "name": "drupal/tla_bootstrap_sass",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TheLanguageArchive/tla_bootstrap_sass.git",
+                "reference": "d13d924d41a673cd00afc9e995237b079ba2c366"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TheLanguageArchive/tla_bootstrap_sass/zipball/d13d924d41a673cd00afc9e995237b079ba2c366",
+                "reference": "d13d924d41a673cd00afc9e995237b079ba2c366",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/bootstrap_barrio": ">=5.1.3"
+            },
+            "default-branch": true,
+            "type": "drupal-theme",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "SASS subtheme for Barrio Theme.",
+            "homepage": "http://drupal.org/project/tla_bootstrap_sass",
+            "support": {
+                "source": "https://github.com/TheLanguageArchive/tla_bootstrap_sass/tree/main",
+                "issues": "https://github.com/TheLanguageArchive/tla_bootstrap_sass/issues"
+            },
+            "time": "2024-06-21T15:25:56+00:00"
+        },
+        {
             "name": "drupal/token",
             "version": "1.15.0",
             "source": {
@@ -7468,45 +7601,6 @@
                 "source": "https://github.com/mck89/peast/tree/v1.16.3"
             },
             "time": "2024-07-23T14:00:32+00:00"
-        },
-        {
-            "name": "mjordan/islandora_workbench_integration",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mjordan/islandora_workbench_integration.git",
-                "reference": "954d812cb6f7d089e29e5679eb81c67bb2772b14"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mjordan/islandora_workbench_integration/zipball/954d812cb6f7d089e29e5679eb81c67bb2772b14",
-                "reference": "954d812cb6f7d089e29e5679eb81c67bb2772b14",
-                "shasum": ""
-            },
-            "default-branch": true,
-            "type": "drupal-module",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Mark Jordan",
-                    "email": "mjordan@sfu.ca",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "Islandora Workbench Integration",
-            "homepage": "https://github.com/mjordan/islandora_workbench_integration",
-            "keywords": [
-                "Islandora",
-                "drupal"
-            ],
-            "support": {
-                "issues": "https://github.com/mjordan/islandora_workbench_integration/issues",
-                "source": "https://github.com/mjordan/islandora_workbench_integration/tree/main"
-            },
-            "time": "2024-09-06T13:39:28+00:00"
         },
         {
             "name": "ml/iri",
@@ -11977,6 +12071,84 @@
             "time": "2024-09-25T14:18:03+00:00"
         },
         {
+            "name": "thelanguagearchive/flat_deposit",
+            "version": "dev-feature/d10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TheLanguageArchive/flat_deposit.git",
+                "reference": "3f9ad03452acc0f1961e928cc5946733f03b9865"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TheLanguageArchive/flat_deposit/zipball/3f9ad03452acc0f1961e928cc5946733f03b9865",
+                "reference": "3f9ad03452acc0f1961e928cc5946733f03b9865",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/core": "^10.0"
+            },
+            "type": "drupal-module",
+            "license": [
+                "GPL-3.0"
+            ],
+            "description": "Drupal deposit module for next generation Islandora/Fedora-based repository",
+            "support": {
+                "source": "https://github.com/TheLanguageArchive/flat_deposit/tree/feature/d10",
+                "issues": "https://github.com/TheLanguageArchive/flat_deposit/issues"
+            },
+            "time": "2024-11-18T09:27:07+00:00"
+        },
+        {
+            "name": "twbs/bootstrap",
+            "version": "v5.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twbs/bootstrap.git",
+                "reference": "6e1f75f420f68e1d52733b8e407fc7c3766c9dba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/6e1f75f420f68e1d52733b8e407fc7c3766c9dba",
+                "reference": "6e1f75f420f68e1d52733b8e407fc7c3766c9dba",
+                "shasum": ""
+            },
+            "replace": {
+                "twitter/bootstrap": "self.version"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Otto",
+                    "email": "markdotto@gmail.com"
+                },
+                {
+                    "name": "Jacob Thornton",
+                    "email": "jacobthornton@gmail.com"
+                }
+            ],
+            "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+            "homepage": "https://getbootstrap.com/",
+            "keywords": [
+                "JS",
+                "css",
+                "framework",
+                "front-end",
+                "mobile-first",
+                "responsive",
+                "sass",
+                "web"
+            ],
+            "support": {
+                "issues": "https://github.com/twbs/bootstrap/issues",
+                "source": "https://github.com/twbs/bootstrap/tree/v5.3.3"
+            },
+            "time": "2024-02-20T15:14:29+00:00"
+        },
+        {
             "name": "twig/twig",
             "version": "v3.14.2",
             "source": {
@@ -12634,10 +12806,10 @@
         "drupal/flysystem": 15,
         "drupal/rest_oai_pmh": 10,
         "drupal/term_merge": 10,
+        "drupal/tla_bootstrap_sass": 20,
         "drupal/views_field_view": 10,
         "islandora-rdm/islandora_fits": 20,
-        "thelanguagearchive/flat_deposit": 20,
-        "thelanguagearchive/tla_bootstrap_sass": 20
+        "thelanguagearchive/flat_deposit": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
