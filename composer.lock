@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a049912e990d03f39c75980c64737fa5",
+    "content-hash": "812bb67ab31b444c74ceba71d01a34d3",
     "packages": [
         {
             "name": "adci/full-name-parser",
@@ -12636,13 +12636,14 @@
         "drupal/term_merge": 10,
         "drupal/views_field_view": 10,
         "islandora-rdm/islandora_fits": 20,
-        "mjordan/islandora_workbench_integration": 20
+        "thelanguagearchive/flat_deposit": 20,
+        "thelanguagearchive/tla_bootstrap_sass": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^7.4 || ^8"
     },
-    "platform-dev": [],
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }
