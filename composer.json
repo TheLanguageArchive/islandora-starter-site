@@ -24,6 +24,14 @@
                     "type": "zip"
                 }
             }
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/TheLanguageArchive/flat_deposit"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/TheLanguageArchive/tla_bootstrap_sass"
         }
     ],
     "require": {
@@ -64,7 +72,10 @@
         "islandora-rdm/islandora_fits": "dev-8.x-1.x as 1.x-dev",
         "islandora/views_nested_details": "^1.0",
         "library/pdf.js": "^2.4",
-        "mjordan/islandora_workbench_integration": "dev-main"
+        "drupal/bootstrap_barrio": "^5.5",
+        "drupal/bootstrap_sass": "^5.0",
+        "TheLanguageArchive/flat_deposit": "feature/d10",
+        "TheLanguageArchive/tla_bootstrap_sass": "main"
     },
     "conflict": {
         "drupal/drupal": "*",
