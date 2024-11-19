@@ -1,0 +1,21 @@
+uuid: 15bdbb4c-531f-4b43-9450-d87facb0b3ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.flat_nc_path
+    - node.type.flat_bundle
+_core:
+  default_config_hash: fQiUuzdsKZRwpFUVQId3nci9tDC_bLEsDbW3BaLB-Wc
+id: node.flat_bundle.flat_nc_path
+field_name: flat_nc_path
+entity_type: node
+bundle: flat_bundle
+label: 'Path to Nextcloud directory that includes files to be added to the bundle'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

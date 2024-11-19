@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.nextcloud_integration
+    - field.field.user.user.nextcloud_uid
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -24,6 +26,26 @@ content:
   language:
     weight: 0
     region: content
+  matomo:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  nextcloud_integration:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  nextcloud_uid:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   timezone:
     weight: 6
     region: content

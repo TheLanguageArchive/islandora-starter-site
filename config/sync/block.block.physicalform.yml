@@ -15,7 +15,7 @@ _core:
 id: physicalform
 theme: olivero
 region: sidebar
-weight: -9
+weight: -8
 provider: null
 plugin: 'facet_block:physical_form'
 settings:
@@ -42,6 +42,14 @@ visibility:
     negate: false
     view_inclusion:
       view-solr_search_content-page_1: view-solr_search_content-page_1
+  context:
+    id: context
+    negate: null
+    values: ''
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
   media_source_mimetype:
     id: media_source_mimetype
     negate: false

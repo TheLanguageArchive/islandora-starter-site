@@ -1,0 +1,21 @@
+uuid: 1e7d271c-399a-4441-95f4-e57ccdc25111
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.flat_parent_title
+    - node.type.flat_bundle
+_core:
+  default_config_hash: US0vU66iArg8EKtntMNclp3dozqeFb6jyQenj7zdqHA
+id: node.flat_bundle.flat_parent_title
+field_name: flat_parent_title
+entity_type: node
+bundle: flat_bundle
+label: 'Is part of collection'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: boolean

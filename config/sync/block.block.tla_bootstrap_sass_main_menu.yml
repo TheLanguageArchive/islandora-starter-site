@@ -1,0 +1,27 @@
+uuid: ac94ba5f-ed3b-4597-8a46-40d50afc0676
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - tla_bootstrap_sass
+_core:
+  default_config_hash: p45H2efIdPpqqgWvbcjHUaJ-TAdG6lwRc8WcYB-U8jA
+id: tla_bootstrap_sass_main_menu
+theme: tla_bootstrap_sass
+region: primary_menu
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility: {  }

@@ -1,0 +1,43 @@
+uuid: 9df2164a-2f37-46df-b385-0235a91cb470
+langcode: en
+status: true
+dependencies:
+  module:
+    - context
+    - islandora
+    - system
+  theme:
+    - tla_bootstrap_sass
+_core:
+  default_config_hash: GowwORZ8FZgTgIq-1S8k3_UMu3A3rf4F9xvF1WbRIeo
+id: tla_bootstrap_sass_site_branding
+theme: tla_bootstrap_sass
+region: header
+weight: -12
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility:
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''

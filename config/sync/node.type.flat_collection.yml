@@ -1,0 +1,16 @@
+uuid: afedcf4a-0033-4d6f-919a-708f3c675f99
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - flat_deposit
+_core:
+  default_config_hash: B4KKDg-F2qC8vTRuhWFsiaVVbSeAAmjBrW2SY49ffFI
+name: Collection
+type: flat_collection
+description: 'A collection of data bundles'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: true

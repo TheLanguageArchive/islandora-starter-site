@@ -1,0 +1,9 @@
+_core:
+  default_config_hash: LFQ9HbLEq3gYQSLdDcC9-KX-HJEUqoQ4S0n0kcv_w5k
+activated: 1
+admin_name: admin
+admin_pass: ''
+schema: https
+host: "$_SERVER['HTTP_HOST']"
+root_dir: /var/www/nextcloud/
+data_dir: /var/www/nextcloud/data/

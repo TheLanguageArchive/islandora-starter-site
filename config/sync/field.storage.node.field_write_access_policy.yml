@@ -1,0 +1,25 @@
+uuid: eef9d416-2db7-4474-94de-25d78d8c5ef9
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: umZbW1iOZ8W4xxTVUdkrats54nUyzIfHFu6ditYs4UA
+id: node.field_write_access_policy
+field_name: field_write_access_policy
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,26 @@
+uuid: 9d4b1476-a9e3-4f1b-8682-7af371747296
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  enforced:
+    module:
+      - flat_deposit
+_core:
+  default_config_hash: DTgrOKCP0gcDONIqA_k8jiP0MGxFT1caQ9WnE2V_vBo
+id: node.flat_original_path
+field_name: flat_original_path
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

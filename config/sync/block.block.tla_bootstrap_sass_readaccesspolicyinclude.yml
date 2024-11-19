@@ -1,0 +1,30 @@
+uuid: 74ce8582-529c-43ae-a594-1751a2ac489f
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.read_access_policy_include
+  module:
+    - facets
+    - islandora
+  theme:
+    - tla_bootstrap_sass
+id: tla_bootstrap_sass_readaccesspolicyinclude
+theme: tla_bootstrap_sass
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'facet_block:read_access_policy_include'
+settings:
+  id: 'facet_block:read_access_policy_include'
+  label: 'Read Access Policy Include'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: tla_bootstrap_sass_readaccesspolicyinclude
+visibility:
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''

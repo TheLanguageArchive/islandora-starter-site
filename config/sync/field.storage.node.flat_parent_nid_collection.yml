@@ -1,0 +1,26 @@
+uuid: 6db434fa-3638-4421-b52d-68087c05fc55
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+  enforced:
+    module:
+      - flat_deposit
+_core:
+  default_config_hash: hBQLm_klMLmoAKWvJWU7g3SnbNVj7MqZTCMMTPmBakk
+id: node.flat_parent_nid_collection
+field_name: flat_parent_nid_collection
+entity_type: node
+type: list_integer
+settings:
+  allowed_values: {  }
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

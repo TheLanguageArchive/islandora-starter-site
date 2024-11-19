@@ -1,0 +1,44 @@
+uuid: c9e0ecf6-2c92-4654-b9b0-23ac7badbdf1
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.media
+    - views.view.media_facets
+  module:
+    - search_api
+id: media_facets_summary
+name: 'Media Facets Summary'
+facet_source_id: 'search_api:views_block__media_facets__block_1'
+processor_configs:
+  hide_when_not_rendered:
+    processor_id: hide_when_not_rendered
+    weights:
+      build: '45'
+    settings: {  }
+  show_count:
+    processor_id: show_count
+    weights:
+      build: '5'
+    settings: {  }
+  show_text_when_empty:
+    processor_id: show_text_when_empty
+    weights:
+      build: '10'
+    settings:
+      text:
+        value: 'No results found.'
+        format: plain_text
+facets:
+  file_size:
+    checked: true
+    label: 'File size'
+    separator: ', '
+    show_count: true
+    weight: 0
+  mime_type:
+    checked: true
+    label: 'MIME type'
+    separator: ', '
+    show_count: true
+    weight: 0

@@ -1,0 +1,23 @@
+uuid: 202e6810-a794-48d9-b13e-e46c6bb14e00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.flat_parent_nid_bundle
+    - node.type.flat_bundle
+  module:
+    - options
+_core:
+  default_config_hash: P1XXWj_ptOZbe8EInzUKFnx9ofIYce_gIqyUmnShnU8
+id: node.flat_bundle.flat_parent_nid_bundle
+field_name: flat_parent_nid_bundle
+entity_type: node
+bundle: flat_bundle
+label: 'Parent collection'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

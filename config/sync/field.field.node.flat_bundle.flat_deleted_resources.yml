@@ -1,0 +1,24 @@
+uuid: 61b485f0-461c-4dcb-84e2-ba222cfb1ac6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.flat_deleted_resources
+    - node.type.flat_bundle
+  module:
+    - text
+_core:
+  default_config_hash: k5vPzL3-JATw7WYKxZZMzjlivZQX6LTK2o-l-JEGHE0
+id: node.flat_bundle.flat_deleted_resources
+field_name: flat_deleted_resources
+entity_type: node
+bundle: flat_bundle
+label: 'Deleted Resources'
+description: 'Resources of existing bundle that will be deleted'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

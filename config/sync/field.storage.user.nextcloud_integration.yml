@@ -1,0 +1,23 @@
+uuid: bdbc2144-79fa-4bbe-a7f0-c207ae1dade0
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  enforced:
+    module:
+      - flat_nextcloud
+_core:
+  default_config_hash: pkElf9O9o7DVZQ3zVCeaq7wuVbIsvrhRE8PJfEFY6Ws
+id: user.nextcloud_integration
+field_name: nextcloud_integration
+entity_type: user
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,26 @@
+uuid: f7561cd7-8114-4fb3-aaf9-a0b0156ad2ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+  enforced:
+    module:
+      - flat_deposit
+_core:
+  default_config_hash: pnlAJMrJ3BnVY9dmDO7ZObJ-eb0sbVMrA7Zxr213yYo
+id: node.flat_parent_nid_bundle
+field_name: flat_parent_nid_bundle
+entity_type: node
+type: list_integer
+settings:
+  allowed_values: {  }
+  allowed_values_function: flat_deposit_get_user_active_collections
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

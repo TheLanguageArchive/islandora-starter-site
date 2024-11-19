@@ -1,0 +1,21 @@
+uuid: d87965d4-1a9b-4f9e-9b04-f6af4586430d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.flat_ws_path
+    - node.type.flat_bundle
+_core:
+  default_config_hash: Dgs4kO9wB5NPvBiS394TrT4zh6hyv22ufC3f4um1UBU
+id: node.flat_bundle.flat_ws_path
+field_name: flat_ws_path
+entity_type: node
+bundle: flat_bundle
+label: 'Path to workspace directory that includes files to be added to the bundle'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

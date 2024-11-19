@@ -1,0 +1,25 @@
+uuid: 1029ccff-5a11-445b-9b9a-b325200ffc7e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+  enforced:
+    module:
+      - flat_deposit
+_core:
+  default_config_hash: xU9scLhIVeTgBw-y06wNgRoPH8BYtJnMqL5e40z-7Qc
+id: node.flat_deleted_resources
+field_name: flat_deleted_resources
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

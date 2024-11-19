@@ -13,7 +13,7 @@ dependencies:
 id: resource_type_swc
 theme: olivero
 region: sidebar
-weight: -15
+weight: -13
 provider: null
 plugin: 'facet_block:resource_type_swc'
 settings:
@@ -35,6 +35,10 @@ visibility:
       own_page_true: '0'
       field_value: '0'
     user_fields: uid
+  context:
+    id: context
+    negate: null
+    values: ''
   context_all:
     id: context_all
     negate: null

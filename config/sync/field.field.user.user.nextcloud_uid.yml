@@ -1,0 +1,22 @@
+uuid: 1e6594ad-f00f-4b0f-983c-d6d81f54417e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.nextcloud_uid
+  module:
+    - user
+_core:
+  default_config_hash: 6AnzNgxAKhn7QTpVaDHGTRtg6me9Awbd4YPc8LxJA9g
+id: user.user.nextcloud_uid
+field_name: nextcloud_uid
+entity_type: user
+bundle: user
+label: 'Nextcloud UID'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

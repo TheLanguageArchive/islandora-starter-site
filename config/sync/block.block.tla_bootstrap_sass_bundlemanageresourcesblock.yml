@@ -1,0 +1,33 @@
+uuid: ff65d06d-4ba9-4599-9336-e9f0b53715de
+langcode: en
+status: true
+dependencies:
+  module:
+    - flat_deposit
+    - islandora
+    - system
+  theme:
+    - tla_bootstrap_sass
+_core:
+  default_config_hash: TSMQsEGZy4n0NyiMu8n9n35SmtBL_4d2AnGcx4-GCxA
+id: tla_bootstrap_sass_bundlemanageresourcesblock
+theme: tla_bootstrap_sass
+region: content
+weight: -2
+provider: null
+plugin: bundle_manage_resources_block
+settings:
+  id: bundle_manage_resources_block
+  label: 'Bundle Manage Resources block'
+  label_display: '0'
+  provider: flat_deposit
+visibility:
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/*/enter-metadata\r\n/*/edit-metadata\r\n/*/update-metadata"

@@ -77,9 +77,6 @@ fieldMappings:
     properties:
       - 'pcdm:memberOf'
     mapping_type: rel
-  field_publisher:
-    properties:
-      - 'dc11:publisher'
   field_resource_type:
     properties:
       - 'dcterms:type'

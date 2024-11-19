@@ -422,27 +422,9 @@ display:
           separator: ', '
           field_api_classes: false
       pager:
-        type: full
+        type: none
         options:
           offset: 0
-          pagination_heading_level: h4
-          items_per_page: 50
-          total_pages: null
-          id: 0
-          tags:
-            next: 'Next ›'
-            previous: '‹ Previous'
-            first: '« First'
-            last: 'Last »'
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          quantity: 9
       exposed_form:
         type: basic
         options:
@@ -1120,10 +1102,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-      pager:
-        type: none
-        options:
-          offset: 0
       filters:
         islandora_has_media:
           id: islandora_has_media
@@ -1283,7 +1261,18 @@ display:
         filters: false
         filter_groups: false
       display_description: ''
-      display_extenders: {  }
+      display_extenders:
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
       path: admin/content/missing-media/csv-ext
       auth:
         - basic_auth
@@ -1291,6 +1280,7 @@ display:
         - cookie
       displays:
         page_1: page_1
+        page_9: page_9
         default: '0'
         page_2: '0'
         page_3: '0'
@@ -1299,12 +1289,8 @@ display:
         page_6: '0'
         page_7: '0'
         page_8: '0'
-        page_9: '0'
-      filename: missing-extracted-text.csv
-      automatic_download: true
-      export_method: batch
-      export_batch_size: 1000
-      export_limit: 0
+      filename: ''
+      automatic_download: false
       store_in_public_file_directory: null
       custom_redirect_path: false
       redirect_to_display: none
@@ -1885,7 +1871,18 @@ display:
         filters: false
         filter_groups: false
       display_description: ''
-      display_extenders: {  }
+      display_extenders:
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
       path: admin/content/missing-media/csv-fits
       auth:
         - basic_auth
@@ -1902,10 +1899,8 @@ display:
         page_7: '0'
         page_8: '0'
         page_9: '0'
-      filename: missing-fits.csv
-      automatic_download: true
-      export_method: batch
-      export_batch_size: 1000
+      filename: ''
+      automatic_download: false
       store_in_public_file_directory: null
       custom_redirect_path: false
       redirect_to_display: none
@@ -2486,7 +2481,18 @@ display:
         filters: false
         filter_groups: false
       display_description: ''
-      display_extenders: {  }
+      display_extenders:
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
       path: admin/content/missing-media/csv-intermediate
       auth:
         - basic_auth
@@ -2503,10 +2509,8 @@ display:
         page_7: '0'
         page_8: '0'
         page_9: '0'
-      filename: missing-intermediate.csv
-      automatic_download: true
-      export_method: batch
-      export_batch_size: 1000
+      filename: ''
+      automatic_download: false
       store_in_public_file_directory: null
       custom_redirect_path: false
       redirect_to_display: none
@@ -3087,7 +3091,18 @@ display:
         filters: false
         filter_groups: false
       display_description: ''
-      display_extenders: {  }
+      display_extenders:
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
       path: admin/content/missing-media/csv-original
       auth:
         - basic_auth
@@ -3104,10 +3119,8 @@ display:
         page_7: '0'
         page_8: '0'
         page_9: '0'
-      filename: missing-original.csv
-      automatic_download: true
-      export_method: batch
-      export_batch_size: 1000
+      filename: ''
+      automatic_download: false
       store_in_public_file_directory: null
       custom_redirect_path: false
       redirect_to_display: none
@@ -3688,7 +3701,18 @@ display:
         filters: false
         filter_groups: false
       display_description: ''
-      display_extenders: {  }
+      display_extenders:
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
       path: admin/content/missing-media/csv-preservation-master
       auth:
         - basic_auth
@@ -3705,10 +3729,8 @@ display:
         page_7: '0'
         page_8: '0'
         page_9: '0'
-      filename: missing-preservation-file.csv
-      automatic_download: true
-      export_method: batch
-      export_batch_size: 1000
+      filename: ''
+      automatic_download: false
       store_in_public_file_directory: null
       custom_redirect_path: false
       redirect_to_display: none
@@ -4289,7 +4311,18 @@ display:
         filters: false
         filter_groups: false
       display_description: ''
-      display_extenders: {  }
+      display_extenders:
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
       path: admin/content/missing-media/csv-service
       auth:
         - basic_auth
@@ -4306,10 +4339,8 @@ display:
         page_7: '0'
         page_8: '0'
         page_9: '0'
-      filename: missing-service-file.csv
-      automatic_download: true
-      export_method: batch
-      export_batch_size: 1000
+      filename: ''
+      automatic_download: false
       store_in_public_file_directory: null
       custom_redirect_path: false
       redirect_to_display: none
@@ -4890,7 +4921,18 @@ display:
         filters: false
         filter_groups: false
       display_description: ''
-      display_extenders: {  }
+      display_extenders:
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
       path: admin/content/missing-media/csv-thumbnail
       auth:
         - basic_auth
@@ -4907,10 +4949,8 @@ display:
         page_6: '0'
         page_8: '0'
         page_9: '0'
-      filename: missing-thumbnail-image.csv
-      automatic_download: true
-      export_method: batch
-      export_batch_size: 1000
+      filename: ''
+      automatic_download: false
       store_in_public_file_directory: null
       custom_redirect_path: false
       redirect_to_display: none
@@ -5491,7 +5531,18 @@ display:
         filters: false
         filter_groups: false
       display_description: ''
-      display_extenders: {  }
+      display_extenders:
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
       path: admin/content/missing-media/csv-transcript
       auth:
         - basic_auth
@@ -5508,10 +5559,8 @@ display:
         page_6: '0'
         page_7: '0'
         page_9: '0'
-      filename: missing-transcript.csv
-      automatic_download: true
-      export_method: batch
-      export_batch_size: 1000
+      filename: ''
+      automatic_download: false
       store_in_public_file_directory: null
       custom_redirect_path: false
       redirect_to_display: none
@@ -5681,7 +5730,18 @@ display:
         filters: false
         filter_groups: false
       display_description: ''
-      display_extenders: {  }
+      display_extenders:
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
       path: admin/content/missing-media/extracted-text
       menu:
         type: normal
@@ -6307,7 +6367,18 @@ display:
         filters: false
         filter_groups: false
       display_description: ''
-      display_extenders: {  }
+      display_extenders:
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
       path: admin/content/missing-media/fits-file
       menu:
         type: normal
@@ -6880,7 +6951,18 @@ display:
         filters: false
         filter_groups: false
       display_description: ''
-      display_extenders: {  }
+      display_extenders:
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
       path: admin/content/missing-media/intermediate-file
       menu:
         type: normal
@@ -7453,7 +7535,18 @@ display:
         filters: false
         filter_groups: false
       display_description: ''
-      display_extenders: {  }
+      display_extenders:
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
       path: admin/content/missing-media/original-file
       menu:
         type: normal
@@ -8026,7 +8119,18 @@ display:
         filters: false
         filter_groups: false
       display_description: ''
-      display_extenders: {  }
+      display_extenders:
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
       path: admin/content/missing-media/preservation-master-file
       menu:
         type: normal
@@ -8655,7 +8759,18 @@ display:
         filters: false
         filter_groups: false
       display_description: ''
-      display_extenders: {  }
+      display_extenders:
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
       path: admin/content/missing-media/service-file
       menu:
         type: normal
@@ -9285,7 +9400,18 @@ display:
         filters: false
         filter_groups: false
       display_description: ''
-      display_extenders: {  }
+      display_extenders:
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
       path: admin/content/missing-media/thumbnail-image
       menu:
         type: normal
@@ -9858,7 +9984,18 @@ display:
         filters: false
         filter_groups: false
       display_description: ''
-      display_extenders: {  }
+      display_extenders:
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
       path: admin/content/missing-media/transcript
       menu:
         type: normal
@@ -9990,7 +10127,18 @@ display:
         filters: false
         filter_groups: false
       display_description: 'provides a menu link under Content.'
-      display_extenders: {  }
+      display_extenders:
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
       path: admin/content/missing-media/all
       menu:
         type: normal

@@ -1,0 +1,24 @@
+uuid: 393f11c9-6827-4ac0-962a-d45a1cd3312f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.flat_fid_super
+    - node.type.flat_bundle
+  module:
+    - text
+_core:
+  default_config_hash: cElZJZCklG2cFdGzS0gETJU1_x8b5ALRQN2FUr7rmPg
+id: node.flat_bundle.flat_fid_super
+field_name: flat_fid_super
+entity_type: node
+bundle: flat_bundle
+label: 'Fedora commons ID of super collection node'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

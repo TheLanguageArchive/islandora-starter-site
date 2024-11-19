@@ -1,0 +1,35 @@
+uuid: bdbde80f-6fca-4c00-955a-3f158886add8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+  enforced:
+    module:
+      - flat_deposit
+_core:
+  default_config_hash: zJ19aZO3Am2UIzC_atjr8ieCAMmimzizgR4ANl4sKys
+id: node.flat_cmdi_option
+field_name: flat_cmdi_option
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: new
+      label: 'Enter it using a form'
+    -
+      value: import
+      label: 'Upload a CMDI file'
+    -
+      value: template
+      label: 'Upload a CMDI file to be used as a template (any links to files will be stripped)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

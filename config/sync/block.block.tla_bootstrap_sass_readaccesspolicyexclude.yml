@@ -1,0 +1,30 @@
+uuid: 9297f892-ab5c-411c-85fb-2149e58f5988
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.read_access_policy_exclude
+  module:
+    - facets
+    - islandora
+  theme:
+    - tla_bootstrap_sass
+id: tla_bootstrap_sass_readaccesspolicyexclude
+theme: tla_bootstrap_sass
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'facet_block:read_access_policy_exclude'
+settings:
+  id: 'facet_block:read_access_policy_exclude'
+  label: 'Read Access Policy Exclude'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: tla_bootstrap_sass_readaccesspolicyexclude
+visibility:
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''

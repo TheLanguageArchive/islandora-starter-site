@@ -1,0 +1,16 @@
+uuid: d17fa279-f80e-4eba-ae51-e724e63ba97b
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - flat_deposit
+_core:
+  default_config_hash: PKiukqhyaY7yjXnzna4uDVgZa9kIKPh06G8y1OsZP1I
+name: Bundle
+type: flat_bundle
+description: 'A bundle of one or more data files'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: true

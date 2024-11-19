@@ -7,9 +7,9 @@ dependencies:
     - node.type.page
     - taxonomy.vocabulary.tags
   module:
-    - comment
     - contextual
     - file
+    - file_entity
     - help
     - node
     - path
@@ -41,10 +41,10 @@ permissions:
   - 'delete own page content'
   - 'delete page revisions'
   - 'edit own article content'
-  - 'edit own comments'
   - 'edit own page content'
   - 'edit terms in tags'
   - 'revert all revisions'
   - 'view all revisions'
+  - 'view files'
   - 'view own unpublished content'
   - 'view the administration theme'

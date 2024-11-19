@@ -1,0 +1,25 @@
+uuid: 8884feb6-9c48-445d-a03a-9ccd04cb1bca
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+  enforced:
+    module:
+      - flat_deposit
+_core:
+  default_config_hash: bYNK2V7L9-mmNuQgYy7yISEXFHG1PaWPVpiIVbk71OA
+id: node.flat_collection_exception
+field_name: flat_collection_exception
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

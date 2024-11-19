@@ -1,0 +1,32 @@
+uuid: cd486bac-5f11-448e-a713-1949c6b5c7eb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+  enforced:
+    module:
+      - flat_deposit
+_core:
+  default_config_hash: SjIbKbPyABeTnsQwSw1M-BHk83ycYKeQh4Z70P7qapU
+id: node.flat_type
+field_name: flat_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: new
+      label: 'Newly created content'
+    -
+      value: update
+      label: 'Update of existing content'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

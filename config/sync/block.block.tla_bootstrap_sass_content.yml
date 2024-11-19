@@ -1,0 +1,22 @@
+uuid: bcfceb9d-4ac7-41af-a797-58e041b776bd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tla_bootstrap_sass
+_core:
+  default_config_hash: OPilf9t2LSHhPEg_j52zI2tABtJoIjgadN7bt62RXdQ
+id: tla_bootstrap_sass_content
+theme: tla_bootstrap_sass
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

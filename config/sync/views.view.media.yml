@@ -785,7 +785,6 @@ display:
         type: full
         options:
           offset: 0
-          pagination_heading_level: h4
           items_per_page: 50
           total_pages: null
           id: 0
@@ -803,6 +802,7 @@ display:
             offset: false
             offset_label: Offset
           quantity: 9
+          pagination_heading_level: h4
       exposed_form:
         type: basic
         options:
@@ -2030,7 +2030,18 @@ display:
             use_serializer_encode_only: false
       defaults:
         fields: false
-      display_extenders: {  }
+      display_extenders:
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
       path: admin/content/media/csv
       auth:
         - basic_auth
@@ -2066,7 +2077,18 @@ display:
     position: 1
     display_options:
       display_description: ''
-      display_extenders: {  }
+      display_extenders:
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
       path: admin/content/media
       menu:
         type: tab

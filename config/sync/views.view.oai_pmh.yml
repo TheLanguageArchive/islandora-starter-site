@@ -76,7 +76,6 @@ display:
         type: mini
         options:
           offset: 0
-          pagination_heading_level: h4
           items_per_page: 10
           total_pages: null
           id: 0
@@ -91,6 +90,7 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
+          pagination_heading_level: h4
       exposed_form:
         type: basic
         options:
@@ -164,46 +164,7 @@ display:
           plugin_id: string
           operator: '!='
           value: 'http://purl.org/dc/dcmitype/Collection'
-          group: 2
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            placeholder: ''
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-        field_external_uri_uri_1:
-          id: field_external_uri_uri_1
-          table: taxonomy_term__field_external_uri
-          field: field_external_uri_uri
-          relationship: field_model
-          group_type: group
-          admin_label: ''
-          plugin_id: string
-          operator: empty
-          value: ''
-          group: 2
+          group: 1
           exposed: false
           expose:
             operator_id: ''
@@ -236,7 +197,6 @@ display:
         operator: AND
         groups:
           1: AND
-          2: OR
       style:
         type: default
         options:
@@ -287,25 +247,6 @@ display:
     display_plugin: entity_reference
     position: 1
     display_options:
-      pager:
-        type: mini
-        options:
-          offset: 0
-          pagination_heading_level: h4
-          items_per_page: 10
-          total_pages: null
-          id: 0
-          tags:
-            next: ››
-            previous: ‹‹
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
       style:
         type: entity_reference
         options:
@@ -318,7 +259,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -328,25 +268,6 @@ display:
     display_plugin: entity_reference
     position: 1
     display_options:
-      pager:
-        type: mini
-        options:
-          offset: 0
-          pagination_heading_level: h4
-          items_per_page: 10
-          total_pages: null
-          id: 0
-          tags:
-            next: ››
-            previous: ‹‹
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
       arguments:
         field_member_of_target_id:
           id: field_member_of_target_id
@@ -398,7 +319,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -408,25 +328,6 @@ display:
     display_plugin: entity_reference
     position: 1
     display_options:
-      pager:
-        type: mini
-        options:
-          offset: 0
-          pagination_heading_level: h4
-          items_per_page: 10
-          total_pages: null
-          id: 0
-          tags:
-            next: ››
-            previous: ‹‹
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
       filters:
         status:
           id: status
@@ -556,7 +457,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }

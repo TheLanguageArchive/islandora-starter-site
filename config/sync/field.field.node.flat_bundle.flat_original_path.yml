@@ -1,0 +1,21 @@
+uuid: d7ef476c-057c-4ad1-a2c2-ae90f4dc90c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.flat_original_path
+    - node.type.flat_bundle
+_core:
+  default_config_hash: i-E5eqpIkD1fJO9zfNzMuF35x5MOvf2CWrYkGqC90-g
+id: node.flat_bundle.flat_original_path
+field_name: flat_original_path
+entity_type: node
+bundle: flat_bundle
+label: 'Original Path of locally stored data'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

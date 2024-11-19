@@ -1,0 +1,28 @@
+uuid: 8522a4a7-a43a-496c-abe3-2e624b8a1e15
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - node
+  enforced:
+    module:
+      - flat_deposit
+_core:
+  default_config_hash: RfNR5jZYQcXuWQ2cHFJ41JnsShlLZ73odnxYFZ5DHRQ
+id: node.flat_cmdi_file
+field_name: flat_cmdi_file
+entity_type: node
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

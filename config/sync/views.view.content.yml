@@ -585,13 +585,13 @@ display:
       pager:
         type: full
         options:
-          pagination_heading_level: h4
           items_per_page: 50
           tags:
             next: 'Next ›'
             previous: '‹ Previous'
             first: '« First'
             last: 'Last »'
+          pagination_heading_level: h4
       exposed_form:
         type: bef
         options:
@@ -1257,7 +1257,18 @@ display:
     display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
+      display_extenders:
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
       path: admin/content/node
       menu:
         type: 'default tab'

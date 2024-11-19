@@ -1,6 +1,6 @@
 uuid: 3aedd62d-a991-4c64-9eb2-b0f4a8fe0a68
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - core.entity_view_mode.media.thumbnail
@@ -243,7 +243,18 @@ display:
     position: 1
     display_options:
       display_description: ''
-      display_extenders: {  }
+      display_extenders:
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
       block_description: Thumbnail
     cache_metadata:
       max-age: -1
@@ -274,7 +285,18 @@ display:
       defaults:
         empty: false
       display_description: ''
-      display_extenders: {  }
+      display_extenders:
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
       block_description: 'Thumbnail with Fallback'
     cache_metadata:
       max-age: -1

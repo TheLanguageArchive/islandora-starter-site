@@ -1,0 +1,29 @@
+uuid: 9b0a8ee9-d001-4db1-8e86-021d35129c97
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.flat_cmdi_file
+    - node.type.flat_bundle
+  module:
+    - file
+_core:
+  default_config_hash: _9pbtrL1vYtPNUW2t0mKSoHUQt8Z9mY2bEJLfuoyYh8
+id: node.flat_bundle.flat_cmdi_file
+field_name: flat_cmdi_file
+entity_type: node
+bundle: flat_bundle
+label: 'Attached metadata file'
+description: 'The metadata file describing the upload bundle'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: cmdi
+  max_filesize: '1 MB'
+  description_field: 0
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

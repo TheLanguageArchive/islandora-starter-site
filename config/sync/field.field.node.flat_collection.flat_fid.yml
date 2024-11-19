@@ -1,0 +1,24 @@
+uuid: 50c69e18-74cc-4df6-b9e1-dc1ac8977aa8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.flat_fid
+    - node.type.flat_collection
+  module:
+    - text
+_core:
+  default_config_hash: 9u48brXKshZ6wD5TPwrHUjK6xKOoGHgXah3cEUxqO7s
+id: node.flat_collection.flat_fid
+field_name: flat_fid
+entity_type: node
+bundle: flat_collection
+label: 'Fedora commons ID'
+description: 'ID assigned by fedora during ingest process'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

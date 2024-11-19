@@ -1,0 +1,26 @@
+uuid: f3eb812e-575f-4bed-9568-0cfe83236fcf
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  enforced:
+    module:
+      - flat_nextcloud
+_core:
+  default_config_hash: raO-aXo4hePzRj3bv0wMDmW54YlzH8UbM3yiQjJB20k
+id: user.nextcloud_uid
+field_name: nextcloud_uid
+entity_type: user
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

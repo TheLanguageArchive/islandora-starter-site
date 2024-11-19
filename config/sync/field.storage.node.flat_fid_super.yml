@@ -1,0 +1,25 @@
+uuid: 8f4300d5-c22f-4d9d-84a1-65876c94825f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+  enforced:
+    module:
+      - flat_deposit
+_core:
+  default_config_hash: RtGmiT0nWsg1Schp6MEkGZgImiOsfQDxPOHvOlSOVgU
+id: node.flat_fid_super
+field_name: flat_fid_super
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

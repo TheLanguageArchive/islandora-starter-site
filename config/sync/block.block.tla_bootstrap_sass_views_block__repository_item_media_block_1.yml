@@ -1,0 +1,30 @@
+uuid: 3b7a74ac-edb8-478d-8f4f-faa17d0062ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.repository_item_media
+  module:
+    - islandora
+    - views
+  theme:
+    - tla_bootstrap_sass
+id: tla_bootstrap_sass_views_block__repository_item_media_block_1
+theme: tla_bootstrap_sass
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:repository_item_media-block_1'
+settings:
+  id: 'views_block:repository_item_media-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''

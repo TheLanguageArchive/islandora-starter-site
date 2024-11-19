@@ -1,0 +1,22 @@
+uuid: 25c1b155-b7f6-468b-93e8-43bb9a7ac1e1
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tla_bootstrap_sass
+_core:
+  default_config_hash: f-jb1yl86o54B1uUy7zyxVsyFN47OkIEuVJmMHNlCDw
+id: tla_bootstrap_sass_breadcrumbs
+theme: tla_bootstrap_sass
+region: content
+weight: -8
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

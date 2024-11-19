@@ -1,0 +1,41 @@
+uuid: 814c8f61-3d1e-47dc-bb31-566dc2b49426
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+  enforced:
+    module:
+      - flat_deposit
+_core:
+  default_config_hash: ClnVAIYPIgzax_imWwiDbTuJaa_iOhKO45Za0PMMdDk
+id: node.flat_policies
+field_name: flat_policies
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: _none
+      label: '-- Select a policy --'
+    -
+      value: public
+      label: public
+    -
+      value: authenticated
+      label: 'authenticated users'
+    -
+      value: academic
+      label: 'academic users'
+    -
+      value: private
+      label: private
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

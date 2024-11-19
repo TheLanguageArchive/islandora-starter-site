@@ -1,0 +1,23 @@
+uuid: 52d2af33-6a50-47bd-8deb-69ebc54b2332
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.flat_bundle_status
+    - node.type.flat_bundle
+  module:
+    - options
+_core:
+  default_config_hash: d5AhL9ImmEw544pSsZEB82dImpNZmcf3frV8Ibn5BwU
+id: node.flat_bundle.flat_bundle_status
+field_name: flat_bundle_status
+entity_type: node
+bundle: flat_bundle
+label: 'Status of the upload'
+description: 'Is the bundle accessible (open or failed), being processed (validating or processing) or closed (valid or archived)'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

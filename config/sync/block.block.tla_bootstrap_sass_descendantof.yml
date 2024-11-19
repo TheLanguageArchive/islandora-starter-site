@@ -1,0 +1,30 @@
+uuid: 6289df13-f76f-4b4a-8d88-1fff241d2600
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.descendant_of
+  module:
+    - facets
+    - islandora
+  theme:
+    - tla_bootstrap_sass
+id: tla_bootstrap_sass_descendantof
+theme: tla_bootstrap_sass
+region: sidebar_first
+weight: -9
+provider: null
+plugin: 'facet_block:descendant_of'
+settings:
+  id: 'facet_block:descendant_of'
+  label: 'Descendant of'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: tla_bootstrap_sass_descendantof
+visibility:
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''

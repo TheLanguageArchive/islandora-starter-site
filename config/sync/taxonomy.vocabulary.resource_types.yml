@@ -4,8 +4,8 @@ status: true
 dependencies: {  }
 _core:
   default_config_hash: tcyfAGtPfozbmd4cDt41tx83H_y01kzvHdFTD9CXHZk
-name: 'Resource Types (LC)'
+name: 'Resource Types'
 vid: resource_types
-description: 'The LC Resource Types vocabulary. '
+description: 'See http://purl.org/dc/dcmitype/ and http://id.loc.gov/vocabulary/resourceTypes.html (a nested list of types).'
 weight: 0
-new_revision: true
+new_revision: false

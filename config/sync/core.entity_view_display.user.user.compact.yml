@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.nextcloud_integration
+    - field.field.user.user.nextcloud_uid
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -30,4 +32,6 @@ content:
 hidden:
   langcode: true
   member_for: true
+  nextcloud_integration: true
+  nextcloud_uid: true
   search_api_excerpt: true

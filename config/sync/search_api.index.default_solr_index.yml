@@ -15,9 +15,10 @@ dependencies:
     - field.storage.node.field_isbn
     - field.storage.node.field_lcc_classification
     - field.storage.node.field_linked_agent
+    - field.storage.node.field_model
     - field.storage.node.field_oclc_number
     - field.storage.node.field_physical_form
-    - field.storage.node.field_publisher
+    - field.storage.node.field_read_access_policy
     - field.storage.node.field_resource_type
     - field.storage.node.field_rights
     - field.storage.node.field_subject_general
@@ -25,7 +26,6 @@ dependencies:
     - field.storage.node.field_subjects_name
     - field.storage.node.field_temporal_subject
     - field.storage.node.field_subject
-    - field.storage.node.field_tags
     - search_api.server.default_solr_server
     - core.entity_view_mode.node.search_index
   module:
@@ -35,11 +35,13 @@ dependencies:
     - taxonomy
     - search_api
     - controlled_access_terms
+    - flat_permissions
 third_party_settings:
   search_api_solr:
     finalize: false
     commit_before_finalize: false
     commit_after_finalize: false
+    debug_finalize: false
     highlighter:
       maxAnalyzedChars: 51200
       fragmenter: regex
@@ -55,11 +57,30 @@ third_party_settings:
         requireFieldMatch: false
         snippets: 3
         fragsize: 0
+    mlt:
+      mintf: 1
+      mindf: 1
+      maxdf: 0
+      maxdfpct: 0
+      minwl: 0
+      maxwl: 0
+      maxqt: 100
+      maxntp: 2000
+      boost: false
+      interestingTerms: none
+    term_modifiers:
+      slop: 3
+      fuzzy: 1
     advanced:
       index_prefix: ''
+      collection: ''
+      timezone: ''
     multilingual:
+      limit_to_content_language: false
+      include_language_independent: true
       use_language_undefined_as_fallback_language: false
-      specific_languages: {  }
+      specific_languages:
+        en: '0'
       use_universal_collation: false
 _core:
   default_config_hash: 3HSYR81fyYsY--a93ZG1VSN3PEHVN_o78qIhDfsxzs4
@@ -126,7 +147,7 @@ field_settings:
     label: Description
     datasource_id: 'entity:node'
     property_path: field_description
-    type: text
+    type: string
     dependencies:
       config:
         - field.storage.node.field_description
@@ -209,6 +230,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_member_of
+  field_model:
+    label: Model
+    datasource_id: 'entity:node'
+    property_path: field_model
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_model
   field_oclc_number:
     label: 'OCLC Number'
     datasource_id: 'entity:node'
@@ -227,22 +256,14 @@ field_settings:
         - field.storage.node.field_physical_form
       module:
         - taxonomy
-  field_publisher:
-    label: 'Publisher (string)'
+  field_read_access_policy:
+    label: 'Read Access Policy'
     datasource_id: 'entity:node'
-    property_path: field_publisher
+    property_path: field_read_access_policy
     type: string
     dependencies:
       config:
-        - field.storage.node.field_publisher
-  field_publisher_fulltext:
-    label: Publisher
-    datasource_id: 'entity:node'
-    property_path: field_publisher
-    type: text
-    dependencies:
-      config:
-        - field.storage.node.field_publisher
+        - field.storage.node.field_read_access_policy
   field_resource_type:
     label: 'Resource Type'
     datasource_id: 'entity:node'
@@ -259,14 +280,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_rights
-  field_tags:
-    label: Tags
+  langcode:
+    label: Language
     datasource_id: 'entity:node'
-    property_path: field_tags
-    type: integer
+    property_path: langcode
+    type: string
     dependencies:
-      config:
-        - field.storage.node.field_tags
+      module:
+        - node
   linked_agent_name_fulltext:
     label: Names
     datasource_id: 'entity:node'
@@ -462,12 +483,14 @@ field_settings:
 datasource_settings:
   'entity:node':
     bundles:
-      default: true
-      selected: {  }
+      default: false
+      selected:
+        - islandora_object
     languages:
       default: true
       selected: {  }
 processor_settings:
+  access_level_processor: {  }
   add_url:
     weights:
       preprocess_index: -30
@@ -482,10 +505,10 @@ processor_settings:
   custom_value: {  }
   edtf_year_only:
     fields:
-      node|islandora_object|field_copyright_date: node|islandora_object|field_copyright_date
-      node|islandora_object|field_edtf_date: node|islandora_object|field_edtf_date
-      node|islandora_object|field_edtf_date_created: node|islandora_object|field_edtf_date_created
-      node|islandora_object|field_edtf_date_issued: node|islandora_object|field_edtf_date_issued
+      islandora_object|field_copyright_date: islandora_object|field_copyright_date
+      islandora_object|field_edtf_date: islandora_object|field_edtf_date
+      islandora_object|field_edtf_date_created: islandora_object|field_edtf_date_created
+      islandora_object|field_edtf_date_issued: islandora_object|field_edtf_date_issued
     ignore_undated: 1
     ignore_open_start: 0
     open_start_year: '0'
@@ -511,7 +534,6 @@ processor_settings:
     excerpt_length: 256
     exclude_fields:
       - abstract_description_fulltext
-      - field_description
       - field_full_title
       - linked_agent_name_fulltext
       - rendered_item

@@ -1,0 +1,23 @@
+uuid: a3591151-f3e2-41b6-b6a3-a5ffed67fb25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.flat_policies
+    - node.type.flat_bundle
+  module:
+    - options
+_core:
+  default_config_hash: A5Zj65lXpBkUUZIsPBVMgNYfVQfFvEP8q6uWVNvSvcE
+id: node.flat_bundle.flat_policies
+field_name: flat_policies
+entity_type: node
+bundle: flat_bundle
+label: 'Which access policy do you want to apply?'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

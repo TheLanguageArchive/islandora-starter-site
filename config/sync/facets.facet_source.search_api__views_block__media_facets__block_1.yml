@@ -1,0 +1,9 @@
+uuid: 44785d08-7d43-4771-ad9a-2e84bec4d1e6
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_block__media_facets__block_1
+name: 'search_api:views_block__media_facets__block_1'
+filter_key: null
+url_processor: query_string
+breadcrumb: {  }

@@ -1,0 +1,32 @@
+uuid: 8b86db0b-4f65-4bec-8b2e-f417ae5429dd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+  enforced:
+    module:
+      - flat_deposit
+_core:
+  default_config_hash: KtRF720O9XcbfR4jZTF6UT2X_vMnCUQXQU8wW67c_Lw
+id: node.flat_source
+field_name: flat_source
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: local
+      label: 'Select a folder in a workspace on the server'
+    -
+      value: cloud
+      label: 'Select a Nextcloud folder'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,23 @@
+uuid: c226fa77-8fe2-437d-b931-5c83cdf5b4f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.flat_type
+    - node.type.flat_bundle
+  module:
+    - options
+_core:
+  default_config_hash: p7hmAN_Uw4T8gFdeq3YAfHyOIxCD4vV0Jt1yVBWUPTc
+id: node.flat_bundle.flat_type
+field_name: flat_type
+entity_type: node
+bundle: flat_bundle
+label: 'Type of bundle'
+description: 'Is the bundle newly created or is an existing bundle updated?'
+required: true
+translatable: true
+default_value: new
+default_value_callback: ''
+settings: {  }
+field_type: list_string

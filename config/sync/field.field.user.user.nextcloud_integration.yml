@@ -1,0 +1,24 @@
+uuid: f341a55c-5c7e-4295-85bd-338667cd56ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.nextcloud_integration
+  module:
+    - user
+_core:
+  default_config_hash: l4hli-y-wHPRKVtLHT3NbKo9dcu0I-Uscj-tuOuNkgE
+id: user.user.nextcloud_integration
+field_name: nextcloud_integration
+entity_type: user
+bundle: user
+label: 'Nextcloud Integration'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

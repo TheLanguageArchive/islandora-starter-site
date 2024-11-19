@@ -1,0 +1,22 @@
+uuid: 40769bca-f932-470a-977e-18bac020b23e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tla_bootstrap_sass
+_core:
+  default_config_hash: 6-vpCfJiiSA5yaN3bRR7VYAviLIfKjn_C7jW6d_Ohr8
+id: tla_bootstrap_sass_messages
+theme: tla_bootstrap_sass
+region: content
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

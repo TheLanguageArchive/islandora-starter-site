@@ -1,0 +1,24 @@
+uuid: 2e4ae810-7cad-4639-914a-66ae9d894085
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.flat_bundle_exception
+    - node.type.flat_bundle
+  module:
+    - text
+_core:
+  default_config_hash: ccS9S2F96ZXnsZaPXzanDtjUqEi0_rDFQvsPqq64cR4
+id: node.flat_bundle.flat_bundle_exception
+field_name: flat_bundle_exception
+entity_type: node
+bundle: flat_bundle
+label: Exception
+description: 'Did any errors occur during upload'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

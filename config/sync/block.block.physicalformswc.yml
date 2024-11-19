@@ -13,7 +13,7 @@ dependencies:
 id: physicalformswc
 theme: olivero
 region: sidebar
-weight: -8
+weight: -7
 provider: null
 plugin: 'facet_block:physical_form_swc'
 settings:
@@ -35,6 +35,10 @@ visibility:
       own_page_true: '0'
       field_value: '0'
     user_fields: uid
+  context:
+    id: context
+    negate: null
+    values: ''
   context_all:
     id: context_all
     negate: null

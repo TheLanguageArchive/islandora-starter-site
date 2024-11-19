@@ -8,4 +8,4 @@ name: Person
 vid: person
 description: 'An individual of the human species. '
 weight: 0
-new_revision: true
+new_revision: false

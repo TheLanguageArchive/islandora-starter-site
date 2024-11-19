@@ -1,0 +1,25 @@
+uuid: a7feb1bc-01e9-4aca-aa79-2f55497d40db
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+  enforced:
+    module:
+      - flat_deposit
+_core:
+  default_config_hash: iYhtm0Il8L2IwsqgLAfo_2gn9v_sBGTDaGIRMUJzyfU
+id: node.flat_bundle_exception
+field_name: flat_bundle_exception
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

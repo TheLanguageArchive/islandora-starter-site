@@ -1,0 +1,32 @@
+uuid: 88d8eb1a-4670-4f98-947f-b71f2444e8c1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+  enforced:
+    module:
+      - flat_deposit
+_core:
+  default_config_hash: rmJPUpqn08T7ZKVTJ848aQOGUQ1CDWtNbvyOxDzlQ2c
+id: node.flat_metadata_visibility
+field_name: flat_metadata_visibility
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: show
+      label: visible
+    -
+      value: hide
+      label: hidden
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

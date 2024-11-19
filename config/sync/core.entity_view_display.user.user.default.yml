@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.nextcloud_integration
+    - field.field.user.user.nextcloud_uid
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -31,4 +33,6 @@ content:
     region: content
 hidden:
   langcode: true
+  nextcloud_integration: true
+  nextcloud_uid: true
   search_api_excerpt: true
