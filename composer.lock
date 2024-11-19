@@ -12830,12 +12830,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TheLanguageArchive/flat_deposit.git",
-                "reference": "3f9ad03452acc0f1961e928cc5946733f03b9865"
+                "reference": "9539536a7bc4cbb7c2ec8c3bf85037ca0675a4e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TheLanguageArchive/flat_deposit/zipball/3f9ad03452acc0f1961e928cc5946733f03b9865",
-                "reference": "3f9ad03452acc0f1961e928cc5946733f03b9865",
+                "url": "https://api.github.com/repos/TheLanguageArchive/flat_deposit/zipball/9539536a7bc4cbb7c2ec8c3bf85037ca0675a4e4",
+                "reference": "9539536a7bc4cbb7c2ec8c3bf85037ca0675a4e4",
                 "shasum": ""
             },
             "require": {
@@ -12850,7 +12850,7 @@
                 "source": "https://github.com/TheLanguageArchive/flat_deposit/tree/feature/d10",
                 "issues": "https://github.com/TheLanguageArchive/flat_deposit/issues"
             },
-            "time": "2024-11-18T09:27:07+00:00"
+            "time": "2024-11-19T14:29:38+00:00"
         },
         {
             "name": "twbs/bootstrap",
