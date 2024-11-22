@@ -62,11 +62,11 @@ $databases['default']['default'] = [
   'database' => file_get_contents($path . 'DRUPAL_DEFAULT_DB_NAME'),
   'username' => file_get_contents($path . 'DRUPAL_DEFAULT_DB_USER'),
   'password' => file_get_contents($path . 'DRUPAL_DEFAULT_DB_PASSWORD'),
-  'host' => file_get_contents($path . 'DB_MYSQL_HOST'),
-  'port' => file_get_contents($path . 'DB_MYSQL_PORT'),
+  'host' => file_get_contents($path . 'DB_POSTGRESQL_HOST'),
+  'port' => file_get_contents($path . 'DB_POSTGRESQL_PORT'),
   'prefix' => '',
-  'driver' => 'mysql',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'pgsql',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\pgsql',
 ];
 
 // Flysystem
