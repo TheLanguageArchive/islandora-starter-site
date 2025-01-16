@@ -10,7 +10,7 @@ if (PHP_SAPI === 'cli') {
 // Required when running Drupal behind a reverse proxy.
 $settings['reverse_proxy'] = TRUE;
 $settings['reverse_proxy_addresses'] = array($_SERVER['REMOTE_ADDR']);
-$settings['reverse_proxy_trusted_headers'] = \Symfony\Component\HttpFoundation\Request::HEADER_X_FORWARDED_FOR | 
+$settings['reverse_proxy_trusted_headers'] = \Symfony\Component\HttpFoundation\Request::HEADER_X_FORWARDED_FOR |
 \Symfony\Component\HttpFoundation\Request::HEADER_X_FORWARDED_PROTO | \Symfony\Component\HttpFoundation\Request::HEADER_X_FORWARDED_PORT;
 
 /**
@@ -55,6 +55,8 @@ $config['key.key.islandora_rsa_key']['key_provider_settings']['file_location'] =
 $settings['hash_salt'] = file_get_contents($path . 'DRUPAL_DEFAULT_SALT');
 $settings['trusted_host_patterns'] = [
   0 => file_get_contents($path . 'DRUPAL_DEFAULT_SITE_URL'),
+  1 => '^127\.0.\0.\1$',
+  2 => '^localhost$',
 ];
 
 // Database settings are also derived from environment variables.
