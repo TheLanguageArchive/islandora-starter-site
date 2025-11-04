@@ -31,7 +31,15 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/TheLanguageArchive/tla_bootstrap_sass"
+            "url": "https://github.com/TheLanguageArchive/flat_views"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/TheLanguageArchive/flat_ingest"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/TheLanguageArchive/flat_fix_dl_filename"
         }
     ],
     "require": {
@@ -49,7 +57,7 @@
         "drupal/coi": "^4.0",
         "drupal/config_update": "^2.0@alpha",
         "drupal/context": "^5@RC",
-        "drupal/controlled_access_terms": "^2",
+        "drupal/controlled_access_terms": "^2.5",
         "drupal/core-composer-scaffold": "^10.1",
         "drupal/core-recommended": "^10.1",
         "drupal/facets": "^2",
@@ -82,7 +90,10 @@
         "islandora-rdm/islandora_fits": "dev-8.x-1.x as 1.x-dev",
         "islandora/views_nested_details": "^1.0",
         "library/pdf.js": "^2.4",
-        "thelanguagearchive/flat_deposit": "dev-feature/d10"
+        "thelanguagearchive/flat_deposit": "dev-feature/d10",
+        "thelanguagearchive/flat_fix_dl_filename": "dev-main",
+        "thelanguagearchive/flat_ingest": "dev-main",
+        "thelanguagearchive/flat_views": "dev-main"
     },
     "conflict": {
         "drupal/drupal": "*",

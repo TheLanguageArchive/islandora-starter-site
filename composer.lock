@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "644389e33e1b8f47260e2d72cca855bd",
+    "content-hash": "aa099dfda38af87a8f5e1be94ee596d3",
     "packages": [
         {
             "name": "adci/full-name-parser",
@@ -2468,17 +2468,17 @@
         },
         {
             "name": "drupal/controlled_access_terms",
-            "version": "2.4.4",
+            "version": "2.5.2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/controlled_access_terms.git",
-                "reference": "2.4.4"
+                "reference": "2.5.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/controlled_access_terms-2.4.4.zip",
-                "reference": "2.4.4",
-                "shasum": "47c01998bda2ebe67ff576ee78b1490e0e69b8fc"
+                "url": "https://ftp.drupal.org/files/projects/controlled_access_terms-2.5.2.zip",
+                "reference": "2.5.2",
+                "shasum": "f266bdd2a5d0d528ec930abe2380cb5bf66c6698"
             },
             "require": {
                 "drupal/core": "^10.2 || ^11",
@@ -2507,8 +2507,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.4.4",
-                    "datestamp": "1727894783",
+                    "version": "2.5.2",
+                    "datestamp": "1758138363",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6072,6 +6072,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/term_reference_change.git",
+
                 "reference": "2.0.0-beta5"
             },
             "dist": {
@@ -12830,18 +12831,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TheLanguageArchive/flat_deposit.git",
-                "reference": "31cbb239f514cb42afbc67689b121470b257e06e"
+                "reference": "276a2642491ab8447bf648cfecf037b765fc6a7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TheLanguageArchive/flat_deposit/zipball/31cbb239f514cb42afbc67689b121470b257e06e",
-                "reference": "31cbb239f514cb42afbc67689b121470b257e06e",
+                "url": "https://api.github.com/repos/TheLanguageArchive/flat_deposit/zipball/276a2642491ab8447bf648cfecf037b765fc6a7c",
+                "reference": "276a2642491ab8447bf648cfecf037b765fc6a7c",
                 "shasum": ""
             },
             "require": {
                 "drupal/core": "^10.0"
             },
-            "type": "drupal-module",
+            "type": "drupal-custom-module",
             "license": [
                 "GPL-3.0"
             ],
@@ -12850,7 +12851,100 @@
                 "source": "https://github.com/TheLanguageArchive/flat_deposit/tree/feature/d10",
                 "issues": "https://github.com/TheLanguageArchive/flat_deposit/issues"
             },
-            "time": "2024-11-19T14:52:16+00:00"
+            "time": "2025-11-04T09:32:27+00:00"
+        },
+        {
+            "name": "thelanguagearchive/flat_fix_dl_filename",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TheLanguageArchive/flat_fix_dl_filename.git",
+                "reference": "0dea5c6a4738c8fdc94674afbf6a65d2dcac96f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TheLanguageArchive/flat_fix_dl_filename/zipball/0dea5c6a4738c8fdc94674afbf6a65d2dcac96f7",
+                "reference": "0dea5c6a4738c8fdc94674afbf6a65d2dcac96f7",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/core": "^10.0"
+            },
+            "default-branch": true,
+            "type": "drupal-custom-module",
+            "license": [
+                "GPL-3.0"
+            ],
+            "description": "Ensures correct filenames when downloading files from Fedora through Drupal",
+            "support": {
+                "source": "https://github.com/TheLanguageArchive/flat_fix_dl_filename/tree/main",
+                "issues": "https://github.com/TheLanguageArchive/flat_fix_dl_filename/issues"
+            },
+            "time": "2025-11-04T09:32:59+00:00"
+        },
+        {
+            "name": "thelanguagearchive/flat_ingest",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TheLanguageArchive/flat_ingest.git",
+                "reference": "eb78874aafdb2e5c3bdbdd47e5789f1bd53c73e4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TheLanguageArchive/flat_ingest/zipball/eb78874aafdb2e5c3bdbdd47e5789f1bd53c73e4",
+                "reference": "eb78874aafdb2e5c3bdbdd47e5789f1bd53c73e4",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/core": "^10 || ^11",
+                "drush/drush": "^13"
+            },
+            "default-branch": true,
+            "type": "drupal-custom-module",
+            "autoload": {
+                "psr-4": {
+                    "Drupal\\flat_ingest\\": "src/"
+                }
+            },
+            "license": [
+                "GPL-3.0"
+            ],
+            "description": "Drush commands to help with batch Islandora entity creation.",
+            "support": {
+                "source": "https://github.com/TheLanguageArchive/flat_ingest/tree/main",
+                "issues": "https://github.com/TheLanguageArchive/flat_ingest/issues"
+            },
+            "time": "2025-11-04T10:46:25+00:00"
+        },
+        {
+            "name": "thelanguagearchive/flat_views",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TheLanguageArchive/flat_views.git",
+                "reference": "a8b13d5361698cbe57f4002b92ae2812814f7766"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TheLanguageArchive/flat_views/zipball/a8b13d5361698cbe57f4002b92ae2812814f7766",
+                "reference": "a8b13d5361698cbe57f4002b92ae2812814f7766",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/core": "^10.0"
+            },
+            "default-branch": true,
+            "type": "drupal-custom-module",
+            "license": [
+                "GPL-3.0"
+            ],
+            "description": "Drupal views for the FLAT Islandora-based repository",
+            "support": {
+                "source": "https://github.com/TheLanguageArchive/flat_views/tree/main",
+                "issues": "https://github.com/TheLanguageArchive/flat_views/issues"
+            },
+            "time": "2025-11-04T09:32:44+00:00"
         },
         {
             "name": "twbs/bootstrap",
@@ -13507,7 +13601,10 @@
         "drupal/tla_bootstrap_sass": 20,
         "drupal/views_field_view": 10,
         "islandora-rdm/islandora_fits": 20,
-        "thelanguagearchive/flat_deposit": 20
+        "thelanguagearchive/flat_deposit": 20,
+        "thelanguagearchive/flat_fix_dl_filename": 20,
+        "thelanguagearchive/flat_ingest": 20,
+        "thelanguagearchive/flat_views": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
